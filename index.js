@@ -265,20 +265,20 @@ function openWhatsapp() {
 
 
     
-    // let wTxtEncoded = encodeURI(wTxt);
-    // window.open("https://wa.me/919557393888?text=" + wTxtEncoded);
+    let wTxtEncoded = encodeURI(wTxt);
+    window.open("https://wa.me/919557393888?text=" + wTxtEncoded);
 
     
-    let wTxtEncoded = encodeURIComponent(wTxt);
-    let whatsappURL = "https://wa.me/919557393888?text=" + wTxtEncoded;
+    // let wTxtEncoded = encodeURIComponent(wTxt);
+    // let whatsappURL = "https://wa.me/919557393888?text=" + wTxtEncoded;
 
-    // Try opening the WhatsApp application
-    window.location.href = "whatsapp://send?text=" + wTxtEncoded;
+    // // Try opening the WhatsApp application
+    // window.location.href = "whatsapp://send?text=" + wTxtEncoded;
 
-    // Fallback to WhatsApp Web if the app does not open
-    setTimeout(function() {
-      window.location.href = whatsappURL;
-    }, 2000); // Adjust the timeout as needed
+    // // Fallback to WhatsApp Web if the app does not open
+    // setTimeout(function() {
+    //   window.location.href = whatsappURL;
+    // }, 2000); // Adjust the timeout as needed
 
     
   }
