@@ -38,18 +38,13 @@
 <body>
   <!--     This is the Loader -->
   <div id="loading">
-    <img id="loading-image" src="images/Coffee cup.gif" alt="Loading..." />
-    <!-- <div id="loading">
-    <img id="loading-image"
-      src="https://user-images.githubusercontent.com/62802231/194802891-66d7c782-9765-419d-964b-b6bf6323b95a.gif"
-      alt="Loading..." /> -->
+    <img id="loading-image" src="images/giphy.webp" alt="Loading..." />
   </div>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
-      <!-- CODE FOR NAVIGATION BAR -->
       <ul class="px-0 mx-0">
-        <img class="logo-size-position" src="./images/LOGO.gif" height="64%" width="40%" alt="navbar-logo" />
+        <img class="logo-size-position" src="images\logo.gif" height="64%" width="40%" alt="navbar-logo" />
       </ul>
       <a class="navbar-brand" href="index.html">Maruti da Dhaba</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -73,9 +68,36 @@
           </li>
         </ul>
       </div>
+
       <div id="shoppingclass" data-toggle="modal" data-target="#exampleModal">
         <i class="fas fa-shopping-cart" id="cart"></i>
         <span class="shoppingCartAfter" id="zero">0</span>
+      </div>
+    </div>
+  </nav> -->
+  <nav class="main--nav">
+    <div class="outer--div">
+      <div  class="logo--div">
+        <img class="nav--img" src="./images/logo.gif" alt="navbar-logo" />
+        <h1>Maruti Da Dhaba</h1>
+      </div>
+      <div class="link--div">
+        <ul class="link-list">
+          <li class="link--1  current-page">
+            <a class="" href="#">Home</a>
+          </li>
+          <li class="link--2 ">
+            <a class="" href="index.html#categorySection">Categories</a>
+          </li>
+          <li class="link--3">
+            <a class="" href="index.html#healthySection">Hygiene
+
+            </a>
+          </li>
+          <li class="link--4">
+            <a class="" href="contactus.html">Contact Us</a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -1711,9 +1733,11 @@
 <!-- CUSTOM JS -->
 <script src="./index.js"></script>
 <script>
-  $(window).on("load", function () {
+ $(window).on("load", function () {
+  setTimeout(function() {
     $("#loading").hide();
-  });
+  }, 2000); 
+});
 </script>
 
 </html>

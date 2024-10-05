@@ -32,14 +32,13 @@
 </head>
 
 <body style="background-color: black; color: white">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="z-index: 11">
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="z-index: 11">
+
     <div class="container">
-      <!-- CODE FOR NAVIGATION BAR -->
       <ul class="px-0 mx-0 logo-size-position">
         <img src="./images/logo.gif" height="64%" width="40%" alt="navbar-logo" />
       </ul>
       <a class="navbar-brand" href="index.html" style="font-size: 56px; font-family: elinga">MARUTI DA DHABA</a>
-      <!--         <a style ="font-size :class="navbar-brand" href="#">MARUTI DA DHABA</a> -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -58,6 +57,33 @@
           </li>
           <li class="nav-item">
             <a class="nav-link px-4" href="index.html#footer">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+  <div id="loading">
+    <img id="loading-image" src="images/giphy.webp" alt="Loading..." />
+  </div>
+   <nav class="main--nav">
+    <div class="outer--div">
+      <div  class="logo--div">
+        <img class="nav--img" src="./images/logo.gif" alt="navbar-logo" />
+        <h1>Maruti Da Dhaba</h1>
+      </div>
+      <div class="link--div">
+        <ul class="link-list">
+          <li class="link--1">
+            <a class="" href="index.html">Home</a>
+          </li>
+          <li class="link--2 ">
+            <a class="" href="terms_of_service.html">Terms of Service</a>
+          </li>
+          <li class="link--3 current-page">
+            <a class="" href="#">Privacy Policy</a>
+          </li>
+          <li class="link--4">
+            <a class="" href="contactus.html">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -193,6 +219,13 @@
 
   <!-- CUSTOM JS -->
   <script src="./index.js"></script>
+  <script>
+   $(window).on("load", function () {
+  setTimeout(function() {
+    $("#loading").hide();
+  }, 2000); 
+});
+  </script>
 </body>
 
 </html>

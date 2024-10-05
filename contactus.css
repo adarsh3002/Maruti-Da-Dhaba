@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
-
+@font-face /*  Specifies Custom Font to display the text */ {
+  font-family: myFirstFont;
+  src: url(fonts/EMcomic-Bold.ttf);
+}
 .icon img {
   width: 3rem;
   height: auto;
@@ -16,16 +19,39 @@
   font-family: "Poppins", sans-serif;
 }
 
-.nav-logo {
+/* .nav-logo {
   height: 86px;
   width: 91px;
   margin-top: 1rem !important;
+} */
+.navbar-expand-lg {
+  background-color: #000000;
+  z-index: 2;
+  height: 74px;
+}
+
+.navbar-brand {
+  font-family: "elinga", "myFirstFont", "Roboto";
+  font-weight: 500;
+  /* font-size: 0.5rem; */
+  font-size: 56px;
+}
+
+.nav-item
+
+/* for each navbar item */ {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.fixed-top {
+  z-index: 11;
 }
 
 .contact {
   position: relative;
-  min-height: 100hv;
-  padding: 50px 100px;
+  min-height: 100vh;
+  padding: 120px 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +60,7 @@
     url(images/bg.webp);
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  /* height: 100vh; */
 }
 /* //// */
 /* .logo-size-position {
@@ -555,4 +581,101 @@ footer a {
 /* checkout icons */
 .checkIcon {
   color: green;
+}
+
+
+.main--nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 10000000;
+  background: #00000091;
+  backdrop-filter: blur(4px);
+}
+.outer--div{
+  display: flex;
+  justify-content: space-around;
+  padding: 0.3rem 1rem;
+}
+
+.nav--img{
+  width: 90px;
+  margin-left: 2rem;
+}
+.logo--div{
+  display: flex;
+  width: 40%;
+  align-items: center;
+}
+.logo--div h1{
+  font-size: 3rem;
+  font-family: "myFirstFont";
+  width: 100%;
+  text-align: center;
+  color: white;
+
+}
+.link--div{
+
+  width: 60%;
+  /* display: flex;
+  align-items: center; */
+  /* text-align: center; */
+}
+.link-list{
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 0;
+}
+.link-list li{
+  text-decoration: none;
+  list-style: none;
+opacity: 0.8;  
+transition-duration: 250ms;
+}
+.link-list li a{
+  text-decoration: none;
+  list-style: none;
+  color: rgba(255, 255, 255, 0.744);
+
+  font-size: 1.6rem;
+
+}
+.link-list li:hover{
+  color: rgba(255, 255, 255, 0.911);
+transform: scale(0.95);
+opacity: 1;
+border-bottom: 2px solid  rgba(255, 255, 255, 0.911);}
+.link-list li:active{
+  color: rgba(255, 255, 255, 0.945);
+  transform: scale(0.85);
+  opacity: 1;
+
+}
+
+.current-page a{
+  color: white !important;
+}
+
+#loading {
+  position: fixed;
+  display: block;
+  width: 100vw !important;
+  height: 100vh !important;
+  top: 0;
+  left: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  /* background-color: #ffffff; */
+  background-color: rgb(14, 17, 24);
+  backdrop-filter: blur(7px);
+  z-index: 99999999;
+  
 }
